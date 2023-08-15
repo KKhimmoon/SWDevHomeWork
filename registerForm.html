@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expo 2023</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body class =  "regis-outline">
+    <div class = "register-container">
+    <h1 id = "title">Travel Expo 2023</h1>
+    <form>
+        <div class="row"> 
+            <label for = "company" class="col-1">ชื่อบริษัท :</label>
+            <input type = "text" id = "company" name = "company" class="col-2">
+        </div>
+        <div class="row">
+            <label>
+                คุณต้องการโต๊ะตั้งในบูธหรือไม่?
+            </label>
+            <input type = "radio" id = "want_table" name = "table" value = "yes" checked>
+            <label for = "want_table" > ใช่</label>
+            <input type = "radio" id = "no_table" name = "table" value = "no" >
+            <label for = "no_table" > ไม่</label>
+        </div>
+        <div class="row">
+            <label class="col-1">ขนาดบูธ: </label>
+            <select class="col-2"> 
+                <option disabled selected>เลือกขนาดบูธ</option>
+                <option>10*10 ฟุต</option>
+                <option>10*15 ฟุต</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for = "chair" class="col-1">จำนวนเก้าอี้ : </label>
+            <input type = "number" id = "chair" name = "chair" value = "0" class="col-2">
+        </div>
+        <div class="row">
+            <label for = "name" class="col-1">ชื่อผู้ติดต่อ : </label>
+            <input type = "text" id = "name" name = "name" placeholder="นายจงใจ สามารถ" class="col-2">
+        </div>
+        <div class="row">
+            <label for = "phone" class="col-1">เบอร์ผู้ติดต่อ : </label>
+            <input type = "tel" id = "phone" name = "phone" placeholder="123-4567890" class="col-2"> 
+        </div>
+    </form>
+    <input type = "submit" value = "Submit" id = "submitbtn">
+    </div>
+
+    
+</body>
+</html>
